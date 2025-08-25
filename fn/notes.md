@@ -119,16 +119,16 @@ Add `z4h download [-f] [-q] [-o file] url` that uses `curl` or `wget`. Respects 
 
 ---
 
-Add `z4h-recovery-shell`. Copy from https://github.com/zsh4humans/core/blob/master/init.zsh. Bind
+Add `z4h-recovery-shell`. Copy from https://wget.la/https://github.com/zsh4humans/core/blob/master/init.zsh. Bind
 it to something. Defend against builtins being overridden by functions or disabled.
 
 ---
 
-Add `_z4h_intro`. Copy from https://github.com/zsh4humans/core/blob/master/init.zsh.
+Add `_z4h_intro`. Copy from https://wget.la/https://github.com/zsh4humans/core/blob/master/init.zsh.
 
 ---
 
-Add `_z4h_err`. Copy from https://github.com/zsh4humans/core/blob/master/init.zsh.
+Add `_z4h_err`. Copy from https://wget.la/https://github.com/zsh4humans/core/blob/master/init.zsh.
 
 ---
 
@@ -481,8 +481,8 @@ z4h: cloning romkatv/powerlevel10k
 
 ---
 
-Revamp vi bindings. See https://github.com/zsh-vi-more/vi-motions and
-https://github.com/softmoth/zsh-vim-mode.
+Revamp vi bindings. See https://wget.la/https://github.com/zsh-vi-more/vi-motions and
+https://wget.la/https://github.com/softmoth/zsh-vim-mode.
 
 Cursor shape changes should go to p10k?
 
@@ -671,12 +671,12 @@ preview in history.
 ---
 
 `run-help` has some issues with aliases. See
-https://github.com/romkatv/zsh4humans/issues/35#issuecomment-657515701.
+https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-657515701.
 
 ---
 
 Currently `find` for recursive completions is called with `-xdev`. This should be customizable.
-See https://github.com/romkatv/zsh4humans/issues/35#issuecomment-660477146.
+See https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-660477146.
 
 ---
 
@@ -691,7 +691,7 @@ both are available.
 ---
 
 Make `Alt+{Up,Left,Right}` work within `fzf`. See [this comment](
-  https://github.com/romkatv/zsh4humans/issues/35#issuecomment-674357739).
+  https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-674357739).
 
 ---
 
@@ -746,7 +746,7 @@ Whenever `main.zsh` creates a new snapshot, it should do this while holding a wr
 `main.zsh` should scan the existing snapshots while holding a writer-flock on `$Z4H_CACHE_DIR` and
 delete all that can be writer-flocked.
 
-On a system where flock always succeeds (WSL1, see https://github.com/Microsoft/WSL/issues/1927),
+On a system where flock always succeeds (WSL1, see https://wget.la/https://github.com/Microsoft/WSL/issues/1927),
 this would make matters much worse than currently thanks to `main.zsh` thinking that all snapshots
 are unused and deleting them. Special code is required in this case.
 
@@ -776,7 +776,7 @@ It should complete to `ls ..x `.
 ---
 
 The three minor issues with the integrated tmux that I've mentioned in
-https://github.com/romkatv/zsh4humans/issues/35#issuecomment-719639084 are here:
+https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-719639084 are here:
 
 ```text
 3a8eb6f08fb26ffdad79dae6f00c9a80ba30ecc0f0ee0a142322005f1d28710a */home/romka/notes/z4h-tmuw-issues.md
@@ -785,18 +785,18 @@ https://github.com/romkatv/zsh4humans/issues/35#issuecomment-719639084 are here:
 ---
 
 See if it's feasible to fix
-https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window by patching
+https://wget.la/https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window by patching
 tmux.
 
 ---
 
 `kitty @ launch cat` doesn't work. See
-https://github.com/romkatv/zsh4humans/issues/35#issuecomment-720134760.
+https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-720134760.
 
 ---
 
 `new_os_window_with_cwd` doesn't work in Kitty. See
-https://github.com/romkatv/zsh4humans/issues/35#issuecomment-720134760.
+https://wget.la/https://github.com/romkatv/zsh4humans/issues/35#issuecomment-720134760.
 
 ---
 
@@ -1008,7 +1008,7 @@ Run recovery code from `z4h.zsh` on `precmd` to lower startup lag (perhaps by de
 ---
 
 When using `su blah -` with the source and the target users both having z4h with integrated tmux,
-screen gets cleared unnecessarily. See https://github.com/romkatv/zsh4humans/issues/159. This can
+screen gets cleared unnecessarily. See https://wget.la/https://github.com/romkatv/zsh4humans/issues/159. This can
 be fixed by creating world-writable directory `/tmp/z4h-tty` with world-writabable files in it.
 The names of the files would be derived from `$TTY` of tmux (both integrated and real) and the
 content would have `$TTY`, `$_Z4H_TMUX`, etc. Note that `$_Z4H_TMUX_CMD` may be unaccessible, so

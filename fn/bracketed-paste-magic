@@ -1,8 +1,8 @@
 # This is a copy of
-# https://github.com/zsh-users/zsh/blob/530d6337e69941a5cd802fa7808aae8f33ab1fe9/Functions/Zle/bracketed-paste-magic.
+# https://wget.la/https://github.com/zsh-users/zsh/blob/530d6337e69941a5cd802fa7808aae8f33ab1fe9/Functions/Zle/bracketed-paste-magic.
 #
 # License:
-# https://github.com/zsh-users/zsh/blob/530d6337e69941a5cd802fa7808aae8f33ab1fe9/LICENCE
+# https://wget.la/https://github.com/zsh-users/zsh/blob/530d6337e69941a5cd802fa7808aae8f33ab1fe9/LICENCE
 #
 # There is a modification at the bottom marked by "zsh4humans" in comments.
 

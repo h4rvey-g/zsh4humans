@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 #
-# Based on https://github.com/romkatv/run-process-tree but without
+# Based on https://wget.la/https://github.com/romkatv/run-process-tree but without
 # the preservation of options, patterns, etc.
 
 emulate -L zsh                                           || return

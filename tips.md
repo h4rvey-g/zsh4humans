@@ -93,7 +93,7 @@ alias clear=z4h-clear-screen-soft-bottom
 ```
 
 Note that having prompt always at the *top* is [impossible](
-  https://github.com/romkatv/powerlevel10k-media/issues/2#issuecomment-725277867).
+  https://wget.la/https://github.com/romkatv/powerlevel10k-media/issues/2#issuecomment-725277867).
 
 ## Autosuggestions
 
@@ -121,7 +121,7 @@ This enables extra features in terminals that understand [OSC 133](
 ([iTerm2](https://iterm2.com/documentation-shell-integration.html),
 [kitty](https://sw.kovidgoyal.net/kitty/shell-integration/), and perhaps
 others). It also fixes [horrific mess when resizing terminal window](
-  https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window),
+  https://wget.la/https://github.com/romkatv/powerlevel10k#horrific-mess-when-resizing-terminal-window),
 provided that you've enabled [integrated tmux](#tmux).
 
 In iTerm2 you'll see blue triangles to the left of every prompt. This can be
@@ -136,7 +136,7 @@ together: try two-line prompt, sparse (adds an empty line before prompt), and
 transient prompt. If you are optimizing for productivity, use *Lean* style and
 choose *Few* icons rather than *Many*. The extra icons from *Many* are
 decorative. See: [What is the best prompt style in the configuration wizard](
-  https://github.com/romkatv/powerlevel10k#what-is-the-best-prompt-style-in-the-configuration-wizard).
+  https://wget.la/https://github.com/romkatv/powerlevel10k#what-is-the-best-prompt-style-in-the-configuration-wizard).
 
 
 Add the following option to `~/.zshrc` to make transient prompt work
@@ -452,7 +452,7 @@ Usually this shouldn't be necessary because SSH teleportation automatically
 updates Zsh for Humans on the remote host if your local rc files require a newer
 version than what's available there. When a new feature is added to Zsh for
 Humans (a function, an alias, a zstyle, etc.), [version](
-  https://github.com/romkatv/zsh4humans/blob/v5/version) gets bumped. When
+  https://wget.la/https://github.com/romkatv/zsh4humans/blob/v5/version) gets bumped. When
 teleporting, the version number of the local Zsh for Humans installation is sent
 over to the remote (it's the first part of `$Z4H_SSH`) and the remote is updated
 if its version is lower. This ensures that your rc files are compatible with
@@ -474,8 +474,8 @@ and <kbd>Alt+Down</kbd> (<kbd>Shift+Down</kbd> on macOS) goes to a subdirectory.
 Since there are many subdirectories, the latter asks you to choose.
 
 There is also <kbd>Alt+R</kbd> for fzf over directory history. This is the
-closest thing to [autojump](https://github.com/wting/autojump),
-[z](https://github.com/rupa/z) and similar tools.
+closest thing to [autojump](https://wget.la/https://github.com/wting/autojump),
+[z](https://wget.la/https://github.com/rupa/z) and similar tools.
 
 You might want to configure things a bit differently:
 
@@ -551,7 +551,7 @@ zstyle ':completion:*:(ssh|scp|rdp):*:hosts' hosts
 ## fzf
 
 Familiarize yourself with [fzf query syntax](
-  https://github.com/romkatv/zsh4humans#interactive-search-with-fzf).
+  https://wget.la/https://github.com/romkatv/zsh4humans#interactive-search-with-fzf).
 
 The highlight color can be changed (from the default poisonous pink) with the
 following option:
@@ -634,11 +634,11 @@ There are many tools out there that help you with dotfiles management. Choose
 what you like. As an option, here's what the author of Zsh for Humans uses.
 
 > I have two git repos where I store my stuff: [dotfiles-public](
->   https://github.com/romkatv/dotfiles-public) and dotfiles-private. Both are
+>   https://wget.la/https://github.com/romkatv/dotfiles-public) and dotfiles-private. Both are
 > overlaid over `$HOME` (that is, their worktree is `$HOME`), so I can version
 > any file without moving or symlinking it. I sync dotfiles between my dev
 > machines (a desktop and two laptops) with [sync-dotfiles](
->   https://github.com/romkatv/dotfiles-public/blob/master/dotfiles/functions/sync-dotfiles),
+>   https://wget.la/https://github.com/romkatv/dotfiles-public/blob/master/dotfiles/functions/sync-dotfiles),
 > which I run manually. This function synchronizes both repos.
 > 
 > I store command history in dotfiles-private. There is a separate file per
@@ -653,13 +653,13 @@ what you like. As an option, here's what the author of Zsh for Humans uses.
 > There are a few more important bits to my dotfiles management:
 > 
 > - [my_git_repo](
->     https://github.com/romkatv/dotfiles-public/blob/8784b2702621002172ecbe91abe27d5c62d95efb/.p10k.zsh#L45-L52)
+>     https://wget.la/https://github.com/romkatv/dotfiles-public/blob/8784b2702621002172ecbe91abe27d5c62d95efb/.p10k.zsh#L45-L52)
 >   prompt segment.
 > - [toggle-dotfiles](
->     https://github.com/romkatv/dotfiles-public/blob/master/dotfiles/functions/toggle-dotfiles)
+>     https://wget.la/https://github.com/romkatv/dotfiles-public/blob/master/dotfiles/functions/toggle-dotfiles)
 >   zle widget.
 > - A [keybinding](
->     https://github.com/romkatv/dotfiles-public/blob/8334d8932eabddaf4569de4c3e617b2e911851b4/.zshrc#L115-L118)
+>     https://wget.la/https://github.com/romkatv/dotfiles-public/blob/8334d8932eabddaf4569de4c3e617b2e911851b4/.zshrc#L115-L118)
 >   for `toggle-dotfiles`.
 > 
 > When I press <kbd>Ctrl+P</kbd> once, I get `public` showing up in prompt and
@@ -688,7 +688,7 @@ directory.
 When referencing files and directories managed by [Homebrew](https://brew.sh/),
 you can rely on `HOMEBREW_PREFIX` being automatically set. This is much faster
 than invoking `brew --prefix`. For example, here's how you can load
-[asdf](https://github.com/asdf-vm/asdf):
+[asdf](https://wget.la/https://github.com/asdf-vm/asdf):
 
 ```zsh
 z4h source -- ${HOMEBREW_PREFIX:+$HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh}

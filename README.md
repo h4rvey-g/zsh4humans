@@ -33,13 +33,13 @@ If you want a great shell that just works, this project is for you.
 
 - Powerful POSIX-based shell preconfigured to work great out of the box.
 - Easy-to-use installation wizard. Does not require `git`, `zsh` or `sudo`.
-- [Syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) for the command line.
-- [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) for commands based on command
+- [Syntax highlighting](https://wget.la/https://github.com/zsh-users/zsh-syntax-highlighting) for the command line.
+- [Autosuggestions](https://wget.la/https://github.com/zsh-users/zsh-autosuggestions) for commands based on command
   history.
-- [Command prompt](https://github.com/romkatv/powerlevel10k) configurable through a builtin
+- [Command prompt](https://wget.la/https://github.com/romkatv/powerlevel10k) configurable through a builtin
   configuration wizard.
-- Command completions and history searchable with [fzf](https://github.com/junegunn/fzf).
-- [Super fast](https://github.com/romkatv/zsh-bench). No lag when you open a new tab in the terminal
+- Command completions and history searchable with [fzf](https://wget.la/https://github.com/junegunn/fzf).
+- [Super fast](https://wget.la/https://github.com/romkatv/zsh-bench). No lag when you open a new tab in the terminal
   or run a command.
 - The complete shell environment can be automatically teleported to the remote host when connecting
   over `ssh`. This does not require `git`, `zsh` or `sudo` on the remote host.
@@ -52,9 +52,9 @@ Run this command in bash, zsh, or sh:
 
 ```shell
 if command -v curl >/dev/null 2>&1; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+  sh -c "$(curl -fsSL https://wget.la/https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 else
-  sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
+  sh -c "$(wget -O- https://wget.la/https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 fi
 ```
 
@@ -67,7 +67,7 @@ confirmation on every step so that you are always in control. Installation requi
   <summary>Recording of the installation process</summary>
 
   ![Zsh for Humans installation](
-    https://github.com/romkatv/powerlevel10k-media/raw/32c7d40239c93507277f14522be90b5750f442c9/z4h-install.gif)
+    https://wget.la/https://github.com/romkatv/powerlevel10k-media/raw/32c7d40239c93507277f14522be90b5750f442c9/z4h-install.gif)
 
 </details>
 
@@ -80,14 +80,14 @@ changes to the file system. Once you exit Zsh, the image is deleted.
   ```zsh
   docker run -e TERM -e COLORTERM -e LC_ALL=C.UTF-8 -w /root -it --detach-keys="ctrl-^,ctrl-@" --rm alpine sh -uec '
     apk add zsh curl tmux
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"'
+    sh -c "$(curl -fsSL https://wget.la/https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"'
   ```
 - **Ubuntu**: install additional software with `apt install <package>`:
   ```zsh
   docker run -e TERM -e COLORTERM -w /root -it --detach-keys="ctrl-^,ctrl-@" --rm ubuntu sh -uec '
     apt-get update
     apt-get install -y zsh curl tmux
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"'
+    sh -c "$(curl -fsSL https://wget.la/https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"'
   ```
 
 ## Caveats
@@ -109,13 +109,13 @@ cursor one word to the right will accept that word from the autosuggestion. The 
 can be accepted without moving the cursor with <kbd>Alt+M</kbd>/<kbd>Option+M</kbd>.
 
 Autosuggestions in Zsh for Humans are provided by [zsh-autosuggestions](
-  https://github.com/zsh-users/zsh-autosuggestions). See its homepage for more information.
+  https://wget.la/https://github.com/zsh-users/zsh-autosuggestions). See its homepage for more information.
 
 ### Completing commands
 
 When completing with <kbd>Tab</kbd>, suggestions come from *completion functions*. For most
 commands completion functions are provided by Zsh proper. Additional completion functions are
-contributed by [zsh-completions](https://github.com/zsh-users/zsh-completions). See its homepage
+contributed by [zsh-completions](https://wget.la/https://github.com/zsh-users/zsh-completions). See its homepage
 for the list of commands it supports.
 
 Ambiguous completions automatically start [fzf](#interactive-search-with-fzf). Accept the desired
@@ -132,7 +132,7 @@ the last executed command that contains `grep`.
 
 ### Interactive search with `fzf`
 
-Several UI elements in Zsh for Humans use [fzf](https://github.com/junegunn/fzf) to quickly select
+Several UI elements in Zsh for Humans use [fzf](https://wget.la/https://github.com/junegunn/fzf) to quickly select
 an item from a potentially large list of candidates. You can type multiple search terms delimited by
 spaces. For example:
 
@@ -156,7 +156,7 @@ start with `core` and end with either `go`, `rb`, or `py`.
 ^core go$ | rb$ | py$
 ```
 
-See [fzf](https://github.com/junegunn/fzf) homepage for more information.
+See [fzf](https://wget.la/https://github.com/junegunn/fzf) homepage for more information.
 
 ### SSH
 
@@ -192,23 +192,23 @@ default `~/.zshrc` contains the following types of customizations that should se
 
 ### Customizing prompt
 
-Prompt in Zsh for Humans is provided by [Powerlevel10k](https://github.com/romkatv/powerlevel10k).
+Prompt in Zsh for Humans is provided by [Powerlevel10k](https://wget.la/https://github.com/romkatv/powerlevel10k).
 Run `p10k configure` to access its interactive configuration wizard. Further customization can be
 done by editing `~/.p10k*.zsh` files. There can be more than one configuration file to account for
 terminals with limited capabilities. Most users will ever only see `~/.p10k.zsh`. When in doubt,
 consult `$POWERLEVEL9K_CONFIG_FILE`. This parameter is set by Zsh for Humans and it always points
 to the Powerlevel10k config file currently in use.
 
-See [Powerlevel10k](https://github.com/romkatv/powerlevel10k) homepage for more information.
+See [Powerlevel10k](https://wget.la/https://github.com/romkatv/powerlevel10k) homepage for more information.
 
 ### Customizing appearance
 
 Different parts of Zsh for Humans UI are rendered by different projects.
 
-![Zsh for Humans](https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-highlight.png)
+![Zsh for Humans](https://wget.la/https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-highlight.png)
 
 Everything within the highlighted areas on the screenshot is *prompt*. It is produced by
-[Powerlevel10k](https://github.com/romkatv/powerlevel10k). See
+[Powerlevel10k](https://wget.la/https://github.com/romkatv/powerlevel10k). See
 [Customizing prompt](#customizing-prompt).
 
 The listing of files produced by `ls` command is colored by `ls` itself. Different commands have
@@ -218,15 +218,15 @@ commands such as `ls` and `grep`. For further customization consult documentatio
 command.
 
 `echo hello` is the current command being typed. Syntax highlighting for it is provided by
-[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting). See its homepage
+[zsh-syntax-highlighting](https://wget.la/https://github.com/zsh-users/zsh-syntax-highlighting). See its homepage
 for documentation on how to customize it.
 
 After `echo hello` you can see `world` in grey. This is not a part of the command, so pressing
 <kbd>Enter</kbd> will print only `hello` but not `world`. The latter is an autosuggestion provided
-by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) that you can
+by [zsh-autosuggestions](https://wget.la/https://github.com/zsh-users/zsh-autosuggestions) that you can
 [accept](#accepting-autosuggestions) in part or in full. It comes from command history and it's a
 great productivity booster. See [zsh-autosuggestions](
-  https://github.com/zsh-users/zsh-autosuggestions) homepage for more information.
+  https://wget.la/https://github.com/zsh-users/zsh-autosuggestions) homepage for more information.
 
 Last but not least, your terminal has a say about the appearance of *everything* that runs within
 it. The base colors, numbered from 0 to 15, can look differently in different terminals and even

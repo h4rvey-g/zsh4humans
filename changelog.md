@@ -53,7 +53,7 @@
   Where `[arg]...` is either `integrated` (the default), `no`, `command <cmd> [flag]...`, or
   `system`. The latter is equivalent to `command tmux -u`.
 - Widgets the perform recursive directory traversal (`z4h-cd-down` and `z4h-fzf-complete`) now
-  use [bfs](https://github.com/tavianator/bfs) instead of `find` if it's installed. You can get
+  use [bfs](https://wget.la/https://github.com/tavianator/bfs) instead of `find` if it's installed. You can get
   the original behavior with the following declaration:
   ```zsh
   zstyle ':z4h:(cd-down|fzf-complete)' find-command command find
@@ -78,7 +78,7 @@
   z4h bindkey z4h-eof Ctrl+D
   setopt ignore_eof
   ```
-- There is now builtin integration with [direnv](https://github.com/direnv/direnv). It is much
+- There is now builtin integration with [direnv](https://wget.la/https://github.com/direnv/direnv). It is much
   faster than the stock one and works well with all z4h features. Specifically:
 
   - If there is `.envrc` in the current or ancestor directory when starting
